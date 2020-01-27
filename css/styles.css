@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Bebas Neue Bold';
+    src: url('../font/BebasNeueBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Museo Sans 300 Light';
+    src: url('../font/MuseoSansCyrl-300.woff') format('woff');
+}
+@font-face {
+    font-family: 'Museo Sans 700 Bold';
+    src: url('../font/MuseoSansCyrl-700.woff') format('woff');
+}
+
+
+body {
+    font-family: 'Bebas Neue Bold';
+}
+
+.page-header {
+    background-image: url(../img/00.jpg);
+    color: white;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.page-header__top {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    align-items: center;
+    z-index: 3;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+.page-header__top.wrap {
+    width: calc(100% - 160px);
+    padding: 0 80px;
+    margin: 0 auto;
+}
+
+.page-header__top__link ul {
+    list-style: none;
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding: 0;
+}
+.page-header__top__link ul li {
+    margin-top: 50px;
+}
+.page-header__top__phone {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Museo Sans 700 Bold';
+}
+ .page-header__top__phone a {
+    margin-left: 24px;
+    line-height: 0;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.page-header__top.active .page-header__top__phone a {
+    color: #000;
+}
+.page-header__top__social {
+    margin-left: 41px;
+}
+
+.page-header__top__social__vkontakte {
+    margin-left: 28px; 
+}
+.page-header__top__menu {
+    margin-left: 54px;
+}
+.page-header__top__logo {
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.page-header__top__link {
+    font-family: 'Museo Sans 700 Bold';
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+.page-header__top__link a {
+    color: #303030;
+    text-decoration: none;
+}
+
+.page-header__top__link {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.page-header__top__link.active {
+    display: flex;
+}
+.page-header___white {
+    width: 100%;
+    height: 110px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 2;
+}
+.page-header___blur {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    z-index: 1;
+    backdrop-filter: blur(40px);
+}
+
+.page-header__bg-menu{
+    display: none;
+}
+.page-header__bg-menu.active {
+    display: block;
+}
+.page-header__top.active .page-header__top__logo svg {
+    fill: #000;
+}
+.header-content {
+    padding-top: 110px;
+}
