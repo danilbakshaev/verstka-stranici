@@ -7,8 +7,8 @@ var bodyDocument = document.querySelector("body");
 
 menuOpenButton.addEventListener("click", function(evt){
     if (!menuBlur.classList.contains("active")){
-        headerTop.classList.add("active");
         headerWhite.classList.add("active");
+        headerTop.classList.add("active");
         menuBlur.classList.add("active");
         menuLinks.classList.add("active");
         menuOpenButton.classList.add("active");
@@ -26,11 +26,12 @@ menuOpenButton.addEventListener("click", function(evt){
 window.addEventListener('scroll', function() {
     if (pageYOffset === 0){
         if (!menuBlur.classList.contains("active")){
-            headerWhite.classList.remove("active");
-            headerTop.classList.remove("active");
+            headerTop.classList.remove("active", "animate");
+            headerWhite.classList.remove("active", "animate");
+            
         }
     } else {
-        headerTop.classList.add("active");
-        headerWhite.classList.add("active");
+        headerTop.classList.add("active", "animate");
+        headerWhite.classList.add("active", "animate");
     }
 });
