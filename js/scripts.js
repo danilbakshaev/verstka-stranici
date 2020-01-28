@@ -11,9 +11,11 @@ menuOpenButton.addEventListener("click", function(evt){
         headerWhite.classList.add("active");
         menuBlur.classList.add("active");
         menuLinks.classList.add("active");
+        menuOpenButton.classList.add("active");
     } else {
         menuBlur.classList.remove("active");
         menuLinks.classList.remove("active");
+        menuOpenButton.classList.remove("active");
         if (pageYOffset === 0){
             headerTop.classList.remove("active");
             headerWhite.classList.remove("active");
@@ -23,8 +25,10 @@ menuOpenButton.addEventListener("click", function(evt){
 
 window.addEventListener('scroll', function() {
     if (pageYOffset === 0){
-        headerTop.classList.remove("active");
-        headerWhite.classList.remove("active");
+        if (!menuBlur.classList.contains("active")){
+            headerWhite.classList.remove("active");
+            headerTop.classList.remove("active");
+        }
     } else {
         headerTop.classList.add("active");
         headerWhite.classList.add("active");
