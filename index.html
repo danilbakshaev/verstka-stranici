@@ -11,36 +11,71 @@
 </head>
 <body>
     <header class="page-header">
-        <!-- <div class="page-header__white"></div>
-        <div class="page-header__blur"></div>
-        <div class="page-header__top">
-            <div class="page-header__top__logo">
+        <!-- Десктопное меню -->
+        <div>
+            <div class="page-header__desk">
+                <a href="#"><svg width="219" height="58" viewBox="0 0 219 58" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 57.0426H31.6355V52.0963H5.5262V0.957361H0V57.0426Z"/>
+                    <path d="M34.8729 28.5612C34.8729 45.0757 47.1266 58 63.545 58C80.0435 58 92.2172 45.0757 92.2172 28.5612C92.2172 12.5254 80.0435 0 63.545 0C47.1266 0 34.8729 12.5254 34.8729 28.5612ZM40.6393 28.5612C40.6393 15.3177 50.4103 5.18569 63.545 5.18569C76.7598 5.18569 86.4507 15.3177 86.4507 28.5612C86.4507 42.2834 76.7598 52.8143 63.545 52.8143C50.4103 52.8143 40.6393 42.2834 40.6393 28.5612Z"/>
+                    <path d="M101.043 28.9601C101.043 45.6341 113.216 58 128.674 58C136.122 58 143.01 54.8088 147.014 50.4209H147.174C147.174 50.4209 147.094 51.6176 147.094 52.8143V57.0426H152.14V30.2366H137.323V35.1829H146.934V44.6768C142.529 49.6231 135.962 52.8143 129.234 52.8143C116.34 52.8143 106.809 42.6823 106.809 28.8803C106.809 15.6369 116.02 5.18569 129.715 5.18569C135.722 5.18569 142.529 7.49931 146.454 10.7703L149.497 6.54195C143.971 2.07428 136.523 0 129.475 0C113.296 0 101.043 12.7648 101.043 28.9601Z"/>
+                    <path d="M161.656 28.5612C161.656 45.0757 173.909 58 190.328 58C206.826 58 219 45.0757 219 28.5612C219 12.5254 206.826 0 190.328 0C173.909 0 161.656 12.5254 161.656 28.5612ZM167.422 28.5612C167.422 15.3177 177.193 5.18569 190.328 5.18569C203.543 5.18569 213.234 15.3177 213.234 28.5612C213.234 42.2834 203.543 52.8143 190.328 52.8143C177.193 52.8143 167.422 42.2834 167.422 28.5612Z"/>
+                    </svg></a>
+                <div class="page-header__top__phone">
+                    <img src="img/phone.svg" alt="Телефон">
+                    <a href="tel:8 499 999 99 99">8 499 999 99 99</a>
+                </div>
+                <nav class="page-header__top__social">
+                    <a href="#" class="page-header__top__social__instagram" title="instagram"><img src="img/instagram.svg" alt="Наш instagram"></a>
+                    <a href="#" class="page-header__top__social__vkontakte" title="vkontakte"><img src="img/vk.svg" alt="Наш vkontakte"></a>
+                </nav>
+                <button class="page-header__desk__menu page-header__top__menu"><span>Меню</span></button>  
+            </div>
+            <div class="page-header__desk__open-menu page-header__blur">
+                <nav class="page-header__top__link">
+                    <ul>
+                        <li><a href="#">пункт меню 1</a></li>
+                        <li><a href="#">пункт меню 2</a></li>
+                        <li><a href="#">пункт меню 3</a></li>
+                        <li><a href="#">пункт меню 4</a></li>
+                        <li><a href="#">пункт меню 5</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Мобильно меню -->
+        <div class="">
+            <div class="page-header__mob">
                 <svg width="219" height="58" viewBox="0 0 219 58" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 57.0426H31.6355V52.0963H5.5262V0.957361H0V57.0426Z"/>
                     <path d="M34.8729 28.5612C34.8729 45.0757 47.1266 58 63.545 58C80.0435 58 92.2172 45.0757 92.2172 28.5612C92.2172 12.5254 80.0435 0 63.545 0C47.1266 0 34.8729 12.5254 34.8729 28.5612ZM40.6393 28.5612C40.6393 15.3177 50.4103 5.18569 63.545 5.18569C76.7598 5.18569 86.4507 15.3177 86.4507 28.5612C86.4507 42.2834 76.7598 52.8143 63.545 52.8143C50.4103 52.8143 40.6393 42.2834 40.6393 28.5612Z"/>
                     <path d="M101.043 28.9601C101.043 45.6341 113.216 58 128.674 58C136.122 58 143.01 54.8088 147.014 50.4209H147.174C147.174 50.4209 147.094 51.6176 147.094 52.8143V57.0426H152.14V30.2366H137.323V35.1829H146.934V44.6768C142.529 49.6231 135.962 52.8143 129.234 52.8143C116.34 52.8143 106.809 42.6823 106.809 28.8803C106.809 15.6369 116.02 5.18569 129.715 5.18569C135.722 5.18569 142.529 7.49931 146.454 10.7703L149.497 6.54195C143.971 2.07428 136.523 0 129.475 0C113.296 0 101.043 12.7648 101.043 28.9601Z"/>
                     <path d="M161.656 28.5612C161.656 45.0757 173.909 58 190.328 58C206.826 58 219 45.0757 219 28.5612C219 12.5254 206.826 0 190.328 0C173.909 0 161.656 12.5254 161.656 28.5612ZM167.422 28.5612C167.422 15.3177 177.193 5.18569 190.328 5.18569C203.543 5.18569 213.234 15.3177 213.234 28.5612C213.234 42.2834 203.543 52.8143 190.328 52.8143C177.193 52.8143 167.422 42.2834 167.422 28.5612Z"/>
-                    </svg>       
-            </div>        
-            <div class="page-header__top__phone">
-                <img src="img/phone.svg" alt="Телефон">
-                <a href="tel:8 499 999 99 99">8 499 999 99 99</a>
+                    </svg>
+                <button class="page-header__top__menu page-header__mob__menu"><span>Меню</span></button>
             </div>
-            <nav class="page-header__top__social">
-                <a href="#" class="page-header__top__social__instagram" title="instagram"><img src="img/instagram.svg" alt="Наш instagram"></a>
-                <a href="#" class="page-header__top__social__vkontakte" title="vkontakte"><img src="img/vk.svg" alt="Наш vkontakte"></a>
-            </nav>
-            <button class="page-header__top__menu"><span>Меню</span></button>
-            <nav class="page-header__top__link">
-                <ul>
-                    <li><a href="#">пункт меню 1</a></li>
-                    <li><a href="#">пункт меню 2</a></li>
-                    <li><a href="#">пункт меню 3</a></li>
-                    <li><a href="#">пункт меню 4</a></li>
-                    <li><a href="#">пункт меню 5</a></li>
-                </ul>
-            </nav>
-        </div> -->
+            <div class="page-header__mob__open-menu page-header__blur">
+                <div class="page-header__top__phone">
+                    <img src="img/phone.svg" alt="Телефон">
+                    <a href="tel:8 499 999 99 99">8 499 999 99 99</a>
+                </div>
+                <nav class="page-header__top__link">
+                    <ul>
+                        <li><a href="#">пункт меню 1</a></li>
+                        <li><a href="#">пункт меню 2</a></li>
+                        <li><a href="#">пункт меню 3</a></li>
+                        <li><a href="#">пункт меню 4</a></li>
+                        <li><a href="#">пункт меню 5</a></li>
+                    </ul>
+                </nav>
+                <nav class="page-header__top__social">
+                    <a href="#" class="page-header__top__social__instagram" title="instagram"><img src="img/instagram.svg" alt="Наш instagram"></a>
+                    <a href="#" class="page-header__top__social__vkontakte" title="vkontakte"><img src="img/vk.svg" alt="Наш vkontakte"></a>
+                </nav>
+            </div>  
+        </div>
+
+
         <div class="header-content wrap">
             <h1>lorem ipsum dolor sit amet</h1>
             <p><span class="header-content__pink">lorem</span> ipsum dolor sit amet</p>
