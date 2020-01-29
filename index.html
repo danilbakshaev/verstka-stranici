@@ -3,49 +3,79 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-
-
 </head>
 <body>
     <header class="page-header">
-        <div class="page-header__white"></div>
-        <div class="page-header__blur"></div>
-        <div class="page-header__top">
-            <div class="page-header__top__logo">
+        <!-- Десктопное меню -->
+        <div>
+            <div class="page-header__desk">
+                <a href="#"><svg width="219" height="58" viewBox="0 0 219 58" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 57.0426H31.6355V52.0963H5.5262V0.957361H0V57.0426Z"/>
+                    <path d="M34.8729 28.5612C34.8729 45.0757 47.1266 58 63.545 58C80.0435 58 92.2172 45.0757 92.2172 28.5612C92.2172 12.5254 80.0435 0 63.545 0C47.1266 0 34.8729 12.5254 34.8729 28.5612ZM40.6393 28.5612C40.6393 15.3177 50.4103 5.18569 63.545 5.18569C76.7598 5.18569 86.4507 15.3177 86.4507 28.5612C86.4507 42.2834 76.7598 52.8143 63.545 52.8143C50.4103 52.8143 40.6393 42.2834 40.6393 28.5612Z"/>
+                    <path d="M101.043 28.9601C101.043 45.6341 113.216 58 128.674 58C136.122 58 143.01 54.8088 147.014 50.4209H147.174C147.174 50.4209 147.094 51.6176 147.094 52.8143V57.0426H152.14V30.2366H137.323V35.1829H146.934V44.6768C142.529 49.6231 135.962 52.8143 129.234 52.8143C116.34 52.8143 106.809 42.6823 106.809 28.8803C106.809 15.6369 116.02 5.18569 129.715 5.18569C135.722 5.18569 142.529 7.49931 146.454 10.7703L149.497 6.54195C143.971 2.07428 136.523 0 129.475 0C113.296 0 101.043 12.7648 101.043 28.9601Z"/>
+                    <path d="M161.656 28.5612C161.656 45.0757 173.909 58 190.328 58C206.826 58 219 45.0757 219 28.5612C219 12.5254 206.826 0 190.328 0C173.909 0 161.656 12.5254 161.656 28.5612ZM167.422 28.5612C167.422 15.3177 177.193 5.18569 190.328 5.18569C203.543 5.18569 213.234 15.3177 213.234 28.5612C213.234 42.2834 203.543 52.8143 190.328 52.8143C177.193 52.8143 167.422 42.2834 167.422 28.5612Z"/>
+                    </svg></a>
+                <div class="page-header__top__phone">
+                    <img src="img/phone.svg" alt="Телефон">
+                    <a href="tel:8 499 999 99 99">8 499 999 99 99</a>
+                </div>
+                <nav class="page-header__top__social">
+                    <a href="#" class="page-header__top__social__instagram" title="instagram"><img src="img/instagram.svg" alt="Наш instagram"></a>
+                    <a href="#" class="page-header__top__social__vkontakte" title="vkontakte"><img src="img/vk.svg" alt="Наш vkontakte"></a>
+                </nav>
+                <button class="page-header__desk__menu page-header__top__menu"><span>Меню</span></button>  
+            </div>
+            <div class="page-header__desk__open-menu page-header__blur">
+                <nav class="page-header__top__link">
+                    <ul>
+                        <li><a href="#">пункт меню 1</a></li>
+                        <li><a href="#">пункт меню 2</a></li>
+                        <li><a href="#">пункт меню 3</a></li>
+                        <li><a href="#">пункт меню 4</a></li>
+                        <li><a href="#">пункт меню 5</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Мобильно меню -->
+        <div class="">
+            <div class="page-header__mob">
                 <svg width="219" height="58" viewBox="0 0 219 58" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 57.0426H31.6355V52.0963H5.5262V0.957361H0V57.0426Z"/>
                     <path d="M34.8729 28.5612C34.8729 45.0757 47.1266 58 63.545 58C80.0435 58 92.2172 45.0757 92.2172 28.5612C92.2172 12.5254 80.0435 0 63.545 0C47.1266 0 34.8729 12.5254 34.8729 28.5612ZM40.6393 28.5612C40.6393 15.3177 50.4103 5.18569 63.545 5.18569C76.7598 5.18569 86.4507 15.3177 86.4507 28.5612C86.4507 42.2834 76.7598 52.8143 63.545 52.8143C50.4103 52.8143 40.6393 42.2834 40.6393 28.5612Z"/>
                     <path d="M101.043 28.9601C101.043 45.6341 113.216 58 128.674 58C136.122 58 143.01 54.8088 147.014 50.4209H147.174C147.174 50.4209 147.094 51.6176 147.094 52.8143V57.0426H152.14V30.2366H137.323V35.1829H146.934V44.6768C142.529 49.6231 135.962 52.8143 129.234 52.8143C116.34 52.8143 106.809 42.6823 106.809 28.8803C106.809 15.6369 116.02 5.18569 129.715 5.18569C135.722 5.18569 142.529 7.49931 146.454 10.7703L149.497 6.54195C143.971 2.07428 136.523 0 129.475 0C113.296 0 101.043 12.7648 101.043 28.9601Z"/>
                     <path d="M161.656 28.5612C161.656 45.0757 173.909 58 190.328 58C206.826 58 219 45.0757 219 28.5612C219 12.5254 206.826 0 190.328 0C173.909 0 161.656 12.5254 161.656 28.5612ZM167.422 28.5612C167.422 15.3177 177.193 5.18569 190.328 5.18569C203.543 5.18569 213.234 15.3177 213.234 28.5612C213.234 42.2834 203.543 52.8143 190.328 52.8143C177.193 52.8143 167.422 42.2834 167.422 28.5612Z"/>
-                    </svg>       
-            </div>        
-            <div class="page-header__top__phone">
-                <img src="img/phone.svg" alt="Телефон">
-                <a href="tel:8 499 999 99 99">8 499 999 99 99</a>
+                    </svg>
+                <button class="page-header__top__menu page-header__mob__menu"><span>Меню</span></button>
             </div>
-            <nav class="page-header__top__social">
-                <a href="#" class="page-header__top__social__instagram" title="instagram"><img src="img/instagram.svg" alt="Наш instagram"></a>
-                <!-- Vk -->
-                <a href="#" class="page-header__top__social__vkontakte" title="vkontakte"><img src="img/vk.svg" alt="Наш vkontakte"></a>
-            </nav>
-            <button class="page-header__top__menu"><span>Меню</span></button>
-            <nav class="page-header__top__link">
-                <ul>
-                    <li><a href="#">пункт меню 1</a></li>
-                    <li><a href="#">пункт меню 2</a></li>
-                    <li><a href="#">пункт меню 3</a></li>
-                    <li><a href="#">пункт меню 4</a></li>
-                    <li><a href="#">пункт меню 5</a></li>
-                </ul>
-            </nav>
+            <div class="page-header__mob__open-menu page-header__blur">
+                <div class="page-header__top__phone">
+                    <img src="img/phone.svg" alt="Телефон">
+                    <a href="tel:8 499 999 99 99">8 499 999 99 99</a>
+                </div>
+                <nav class="page-header__top__link">
+                    <ul>
+                        <li><a href="#">пункт меню 1</a></li>
+                        <li><a href="#">пункт меню 2</a></li>
+                        <li><a href="#">пункт меню 3</a></li>
+                        <li><a href="#">пункт меню 4</a></li>
+                        <li><a href="#">пункт меню 5</a></li>
+                    </ul>
+                </nav>
+                <nav class="page-header__top__social">
+                    <a href="#" class="page-header__top__social__instagram" title="instagram"><img src="img/instagram.svg" alt="Наш instagram"></a>
+                    <a href="#" class="page-header__top__social__vkontakte" title="vkontakte"><img src="img/vk.svg" alt="Наш vkontakte"></a>
+                </nav>
+            </div>  
         </div>
+
+
         <div class="header-content wrap">
             <h1>lorem ipsum dolor sit amet</h1>
             <p><span class="header-content__pink">lorem</span> ipsum dolor sit amet</p>
@@ -67,80 +97,118 @@
         </div>
     </header>
     <main>
-        <section class="wrap">
+        <section class="slider wrap">
             <h2>Второй блок</h2>
-            <div>
-                <div>
-                    <span>лоремова</span>
-                    <span>ипсума анатольевна</span>
-                    <span>lorem ipsum dolor</span>
-                    <button>скрыть</button>
-                    <ul>
-                        <li>lorem ipsum dolor lorem ipsum dolor</li>
-                        <li>lorem ipsum dolor</li>
-                        <li>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem</li>
-                        <li>lorem ipsum dolor</li>
-                        <li>lorem ipsum dolor</li>
-                        <li>lorem ipsum dolor</li>
-                    </ul>
-                    <div>
-                        <span>lorem ipsum dolor</span>
-                        <p>lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor</p>
+            <div class="slider__content wrap">
+                <div class="slider__pink slider__pink__left"></div>
+                <div class="slider__pink slider__pink__right"></div>
+                <div class="slider__wrap">
+                    <div class="slider__wrap__left">
+                        <div>
+                            <span class="slider__wrap__left__pink">лоремова</span>
+                            <span class="slider__wrap__left__grey">ипсума анатольевна</span>
+                            <span class="slider__wrap__left__text">lorem ipsum dolor</span>
+                        </div>
+                            <button class="slider__wrap__left__btn btn-grey">скрыть</button>
+                        <div>
+                            <ul class="slider__wrap__left__list">
+                                <li>lorem ipsum dolor lorem ipsum dolor</li>
+                                <li>lorem ipsum dolor</li>
+                                <li>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem</li>
+                                <li>lorem ipsum dolor</li>
+                                <li>lorem ipsum dolor</li>
+                                <li>lorem ipsum dolor</li>
+                            </ul>
+                            <span class="slider__wrap__left__heading">lorem ipsum dolor</span>
+                            <p>lorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolorlorem ipsum dolor</p>
+                            <span class="slider__wrap__left__heading">lorem ipsum dolor</span>
+                            <p>lorem ipsum dolor lorem ipsum dolor</p>
+                        </div>  
                     </div>
-                    <div>
-                        <span>lorem ipsum dolor</span>
-                        <p>lorem ipsum dolor lorem ipsum dolor</p>
+                    
+                    <div class="slider__wrap__right">
+                        <img src="img/Ellipse1.jpg" alt="Картинка картошки">
                     </div>
-                </div>
-                <div>
-                    <img src="" alt="Картинка картошки">
                 </div>
             </div>
-            <div>
-                <button>Left</button>
+            <div class="slider__nav">
+                <button class="slider__nav__btn slider__nav__left"><svg width="30" height="26" viewBox="0 0 30 26" fill="#888888" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.3135 10.6475L28.3604 10.6577H8.28574L14.5965 4.33309C14.9055 4.02431 15.075 3.60602 15.075 3.16699C15.075 2.72797 14.9055 2.3126 14.5965 2.00309L13.6145 1.02065C13.3057 0.711869 12.8943 0.541138 12.4555 0.541138C12.0165 0.541138 11.6048 0.71065 11.296 1.01943L0.478177 11.8363C0.168177 12.1463 -0.00133505 12.5592 -0.000115536 12.9985C-0.00133505 13.4402 0.168177 13.8533 0.478177 14.1628L11.296 24.9806C11.6048 25.2892 12.0162 25.4589 12.4555 25.4589C12.8943 25.4589 13.3057 25.2889 13.6145 24.9806L14.5965 23.9982C14.9055 23.6899 15.075 23.2782 15.075 22.8392C15.075 22.4004 14.9055 22.0104 14.5965 21.7019L8.21452 15.3419H28.336C29.2401 15.3419 29.9999 14.5626 29.9999 13.6589V12.2694C29.9999 11.3658 29.2177 10.6475 28.3135 10.6475Z"/>
+                    </svg>
+                </button>
                 <span>1 из 5</span>
-                <button>Right</button>
+                <button class="slider__nav__btn slider__nav__right"><svg width="30" height="30" viewBox="0 0 30 30" fill="#888888" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                    <path d="M1.68645 17.3526L1.63962 17.3424L21.7143 17.3424L15.4035 23.667C15.0945 23.9758 14.925 24.3941 14.925 24.8331C14.925 25.2722 15.0945 25.6875 15.4035 25.997L16.3855 26.9795C16.6943 27.2883 17.1057 27.459 17.5445 27.459C17.9835 27.459 18.3952 27.2895 18.704 26.9807L29.5218 16.1639C29.8318 15.8539 30.0013 15.4409 30.0001 15.0017C30.0013 14.56 29.8318 14.1468 29.5218 13.8373L18.704 3.01947C18.3952 2.71093 17.9838 2.54118 17.5445 2.54118C17.1057 2.54118 16.6943 2.71118 16.3855 3.01947L15.4035 4.00191C15.0945 4.3102 14.925 4.72191 14.925 5.16094C14.925 5.59971 15.0945 5.98972 15.4035 6.29825L21.7855 12.6583L1.66401 12.6582C0.759868 12.6582 0.000111852 13.4375 0.000111773 14.3412L0.000111652 15.7307C0.000111573 16.6343 0.782308 17.3526 1.68645 17.3526Z"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect x="30" y="30" width="30" height="30" transform="rotate(-180 30 30)" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </button>
             </div>
         </section>
-        <section class="wrap">
-            <h2>Третий блок</h2>
-            <div>
-                <button>2019</button>
-                <button>2018</button>
-                <button>2017</button>
-                <button>2016</button>
-                <button>2015</button>
-                <button>2014</button>
-                <button>2013</button>
-                <button>2012</button>
-                <button>2011</button>
+        <section class="clients">
+            <div class="wrap">
+                <h2>Третий блок</h2>
+            <div class="clients__years">
+                <button class="btn-grey active">2019</button>
+                <button class="btn-grey">2018</button>
+                <button class="btn-grey">2017</button>
+                <button class="btn-grey">2016</button>
+                <button class="btn-grey">2015</button>
+                <button class="btn-grey">2014</button>
+                <button class="btn-grey">2013</button>
+                <button class="btn-grey">2012</button>
+                <button class="btn-grey">2011</button>
             </div>
-            <div>
+            <div class="clients__list">
                 <div>
-                    <img src="" alt="Facebook">
+                    <img src="img/facebook.png" alt="Facebook">
                     <span>Lorem ipsum dolor sit amet.</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
                 </div>
                 <div>
-                    <img src="" alt="Amazon">
+                    <img src="img/amazon.png" alt="Amazon">
                     <span>Lorem ipsum dolor sit amet.</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
                 </div>
                 <div>
-                    <img src="" alt="Sony">
+                    <img src="img/sony.png" alt="Sony">
                     <span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</span>
                 </div>
                 <div>
-                    <img src="" alt="A&E">
+                    <img src="img/ae.png" alt="A&E">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
+                </div>
+                <div>
+                    <img src="img/facebook.png" alt="Facebook">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
+                </div>
+                <div>
+                    <img src="img/amazon.png" alt="Amazon">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
+                </div>
+                <div>
+                    <img src="img/sony.png" alt="Sony">
+                    <span>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</span>
+                </div>
+                <div>
+                    <img src="img/ae.png" alt="A&E">
                     <span>Lorem ipsum dolor sit amet.</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
                 </div>
             </div>
-        </section class="wrap">
+        </section>
     </main>
-    <footer class="wrap">
+    <footer class="footerwrap wrap">
         <span>© Копирайт 2019</span>
-        <a href=""></a>
+        <img src="img/logo__footer.svg" alt="">
     </footer>
   <script src="js/scripts.js"></script>
 </body>
