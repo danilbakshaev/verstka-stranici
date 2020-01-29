@@ -812,6 +812,12 @@ h2 {
     .slider__wrap {
         max-width: 1150px;
     }
+    .page-header__top__link{
+        font-size: 30px;
+    }
+    .page-header__top__link ul li {
+        margin-top: 30px;
+    }
 }
 @media (max-width: 1440px){
     .wrap {
@@ -834,6 +840,7 @@ h2 {
     .clients__list div {
         width: 48%;
     }
+
 }
 @media (max-width: 920px){
     .page-header__desk {
@@ -843,47 +850,6 @@ h2 {
     .page-header__desk svg {
         width: 150px;
     }
-    /* .page-header__top__logo{
-        order: 0;
-    }
-    .page-header__top__menu{
-        order: 1;
-        margin-left: auto;
-    }
-    .page-header__top__phone{
-        order: 2;
-        width: 100%;
-        justify-content: center
-    }
-    .page-header__top__link{
-        order: 3;
-    }
-    .page-header__top__social{
-        order: 4;
-        width: 100%;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-    }
-    .page-header__top__link{
-        font-size: 20px;
-    }
-    .page-header__top__link ul li{
-        margin-top: 25px;
-    }
-    .page-header__top__logo {
-        width: 93px;
-        height: 59px;
-    }
-    .page-header__white{
-        height: 59px;
-    }
-    .page-header__top{
-        width: calc(100% - 20px);
-        padding: 0 10px;
-    } */
-
-
 }
 @media (max-width: 760px){
     .page-header__top__link ul {
