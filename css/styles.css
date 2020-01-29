@@ -16,19 +16,130 @@ body {
     font-family: 'Bebas Neue Bold';
     font-size: 18px;
 }
+h1 {
+    font-size: 80px; 
+    margin-bottom: 11px;
+    margin-top: 90px;
+}
+.header-content p{
+    font-family: 'Museo Sans 700 Bold';
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    display: block;
+}
+.header-content__ul {
+    list-style: none;
+    font-family: 'Museo Sans 700 Bold';
+    font-size: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    /* margin-top: 0; */
+    margin-bottom: 133px;
+}
+.header-content__ul li {
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 148px;
+}
+.header-content__ul li:last-child{
+    margin-bottom: 0;
+}
+.header-content__ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -25px;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+}
+.header-content__ul li:nth-child(1)::after{
+    top: -16px;
+    background-image: url(../img/004-award.svg);
+}
+.header-content__ul li:nth-child(2)::after{
+    background-image: url(../img/002-award.svg);
+}
+.header-content__ul li:nth-child(3)::after{
+    background-image: url(../img/medal1.svg);
+}
+.header-content__ul li:nth-child(4)::after{
+    background-image: url(../img/002-award.svg);
+}
+.header-content__ul li::before {
+    content: '';
+    position: absolute;
+    left: 70px;
+    top: 3px;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+}
+.header-content__ul li:nth-child(1)::before{
+    top: 10px;
+    background-image: url(../img/003-worldwide.svg);
+}
+.header-content__ul li:nth-child(2)::before{
+    background-image: url(../img/001-european-union.svg);
+}
+.header-content__ul li:nth-child(3)::before{
+    background-image: url(../img/001-european-union.svg);
+}
+.header-content__ul li:nth-child(4)::before{
+    background-image: url(../img/002-russia.svg);
+}
+.header-content__li {
+    margin-bottom: 40px;
+}
+.header-content__li:last-child{
+    margin-bottom: 0;
+}
+.btn-pink{
+    font-family: 'Museo Sans 300 Light';
+    background-color: #FF3754;
+    border: none;
+    color: #fff;
+    font-size: 19px;
+    line-height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 4px;
+    padding: 15px;
+}
+.btn-header {
+    width: 412px;
+    height: 62px;
+}
 
+.header-content__li__pink{
+    font-size: 36px;
+    background-color: #FF3754;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+.header-content__pink{
+    color: #FF3754;
+}
 .page-header {
     background-image: url(../img/00.jpg);
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1920px auto;
     color: white;
     left: 0;
     top: 0;
     z-index: 1;
+    height: 960px;
 }
 .wrap {
     position: relative;
     margin: 0px auto;
-    /* max-width: 300px; */
+    max-width: 1740px;
     width: 100%;
 }
 .page-header__top {
