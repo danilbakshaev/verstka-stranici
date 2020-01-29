@@ -6,19 +6,18 @@
 
   <title></title>
   <meta name="description" content="">
-
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width">
+  
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+
 
 </head>
-
 <body>
     <header class="page-header">
-        <div class="page-header__bg-menu">
-            <div class="page-header___white"></div>
-            <div class="page-header___blur"></div>
-        </div>
-        <div class="page-header__top wrap">
+        <div class="page-header__white"></div>
+        <div class="page-header__blur"></div>
+        <div class="page-header__top">
             <div class="page-header__top__logo">
                 <svg width="219" height="58" viewBox="0 0 219 58" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 57.0426H31.6355V52.0963H5.5262V0.957361H0V57.0426Z"/>
@@ -36,7 +35,7 @@
                 <!-- Vk -->
                 <a href="#" class="page-header__top__social__vkontakte" title="vkontakte"><img src="img/vk.svg" alt="Наш vkontakte"></a>
             </nav>
-            <button class="page-header__top__menu">Menu</button>
+            <button class="page-header__top__menu"><span>Меню</span></button>
             <nav class="page-header__top__link">
                 <ul>
                     <li><a href="#">пункт меню 1</a></li>
@@ -47,28 +46,28 @@
                 </ul>
             </nav>
         </div>
-        <div class="header-content">
+        <div class="header-content wrap">
             <h1>lorem ipsum dolor sit amet</h1>
-            <p><span>lorem</span> ipsum dolor sit amet</p>
-            <ul>
+            <p><span class="header-content__pink">lorem</span> ipsum dolor sit amet</p>
+            <ul class="header-content__ul">
                 <li>
-                    Lorem ipsum dol
+                    <span class="header-content__li__pink">Lorem ipsum dol</span>
                 </li>
                 <li>
-                    lorem ipsum
+                    <span>lorem ipsum</span>
                 </li>
                 <li>
-                    lorem ipsum dolor sit amet
+                    <span>lorem ipsum dolor sit amet</span>
                 </li>
                 <li>
-                    lorem ipsum
+                    <span>lorem ipsum</span>
                 </li>
             </ul>
-            <button>lorem ipsum dolor</button>
+            <button class="btn-pink btn-header">lorem ipsum dolor</button>
         </div>
     </header>
     <main>
-        <section>
+        <section class="wrap">
             <h2>Второй блок</h2>
             <div>
                 <div>
@@ -103,7 +102,7 @@
                 <button>Right</button>
             </div>
         </section>
-        <section>
+        <section class="wrap">
             <h2>Третий блок</h2>
             <div>
                 <button>2019</button>
@@ -137,9 +136,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nulla interdum felis placerat vulputate.</p>
                 </div>
             </div>
-        </section>
+        </section class="wrap">
     </main>
-    <footer>
+    <footer class="wrap">
         <span>© Копирайт 2019</span>
         <a href=""></a>
     </footer>
